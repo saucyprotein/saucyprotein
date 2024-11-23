@@ -19,6 +19,9 @@ function updateTicker() {
   });
 }
 
+// Simulate a counter update every 5 seconds for testing
+setInterval(updateTicker, 5000);
+
 document
   .getElementById("waitlist-form")
   .addEventListener("submit", function (event) {
