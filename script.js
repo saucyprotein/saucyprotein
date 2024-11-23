@@ -4,7 +4,7 @@
 console.log("Script.js is connected and ready!");
 
 // Function to simulate a counter with flip effect
-let count = 0; // Initial count value
+let count = 200; // Initial count value
 let tickerDigits = document.querySelectorAll(".counter-digit"); // Get all the counter digit elements
 
 function updateTicker() {
