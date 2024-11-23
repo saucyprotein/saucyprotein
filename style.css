@@ -5,7 +5,7 @@ body {
   background-color: #fff9f4;
   color: #333;
   text-align: center;
-  line-height: 1.6;
+  line-height: 1.1;
 }
 
 /* Header Styling */
@@ -60,10 +60,17 @@ form input,
 form select,
 form button {
   width: 100%;
-  padding: 10px;
+  padding: 10px;        /* Uniform padding for all fields */
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+form input[type="text"], 
+form input[type="email"], 
+form select {
+  padding-left: 0px;   /* Left padding */
+  padding-right: 0px;  /* Right padding */
 }
 
 form button {
