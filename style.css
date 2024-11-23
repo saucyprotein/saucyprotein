@@ -1,0 +1,132 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #fff9f4;
+  color: #333;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+  background-color: #9c2e2f; /* Saucy logo red */
+  color: white;
+  padding: 20px;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-family: "Great Vibes", cursive; /* Saucy title font */
+  font-style: italic;
+  font-size: 4rem;
+}
+h2 {
+  font-family: "DM Serif Display", serif; /* subtitle font */
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+h3 {
+  font-family: "DM Serif Display", serif; /* subtitle font */
+  font-size: 1rem;
+}
+
+/* Form Section */
+#signup-form {
+  margin: 20px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input,
+form select,
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #9c2e2f;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #d32f2f;
+}
+
+/* Ticker Section */
+#ticker {
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 2.5rem; /* Increase size for better visibility */
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+#signup-count {
+  display: flex;
+  gap: 5px;
+}
+
+.counter-digit {
+  display: inline-block;
+  width: 1.2em;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  animation: flip 1s infinite; /* Animation for flipping effect */
+  transform-origin: top; /* This makes the flip look natural */
+}
+
+/* Flipping Animation */
+@keyframes flip {
+  0% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotateX(180deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 0.9rem;
+  background-color: #333;
+  color: white;
+}
