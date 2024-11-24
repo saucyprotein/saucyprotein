@@ -26,20 +26,21 @@ h1 {
   font-size: 4rem;
   margin-bottom: 20px;
 }
+
 h2 {
   font-family: "DM Serif Display", serif; /* subtitle font */
   font-size: 2.5rem;
   margin-top: 20px;
 }
 
-p {
-  font-size: 1.5rem;
-  font-style: italic;
-}
-
 h3 {
   font-family: "DM Serif Display", serif; /* subtitle font */
   font-size: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  font-style: italic;
 }
 
 /* Form Section */
@@ -62,17 +63,17 @@ form input,
 form select,
 form button {
   width: 100%;
-  padding: 10px;        /* Uniform padding for all fields */
+  padding: 10px; /* Uniform padding for all fields */
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-form input[type="text"], 
-form input[type="email"], 
+form input[type="text"],
+form input[type="email"],
 form select {
-  padding-left: 0px;   /* Left padding */
-  padding-right: 0px;  /* Right padding */
+  padding-left: 0px; /* Left padding */
+  padding-right: 0px; /* Right padding */
 }
 
 form button {
@@ -111,24 +112,13 @@ form button:hover {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 3rem;
-  animation: flip 1s infinite; /* Animation for flipping effect */
+  transition: transform 0.5s ease-in-out; /* Smooth flip transition */
   transform-origin: top; /* This makes the flip look natural */
 }
 
 /* Flipping Animation */
-@keyframes flip {
-  0% {
-    transform: rotateX(0deg);
-    opacity: 1;
-  }
-  50% {
-    transform: rotateX(180deg);
-    opacity: 0;
-  }
-  100% {
-    transform: rotateX(360deg);
-    opacity: 1;
-  }
+.flip {
+  transform: rotateX(180deg);
 }
 
 /* Footer */
@@ -138,4 +128,20 @@ footer {
   font-size: 0.9rem;
   background-color: #333;
   color: white;
+}
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between icons */
+  margin-bottom: 10px;
+}
+
+.social-logo {
+  width: 40px; /* Set uniform size */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.social-logo:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
 }
