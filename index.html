@@ -2,141 +2,150 @@
  
 <html lang="en">
  
+
 <head>
- 
+   
   <meta charset="UTF-8">
- 
+   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+   
   <title>Saucy Waitlist</title>
- 
+   
   <link rel="stylesheet" href="style.css">
- 
+   
 </head>
  
+
 <body>
- 
+   
   <!-- Header Section -->
- 
+   
   <header>
- 
+     
     <img src="saucylogo.jpg" alt="Saucy Protein Sauce Logo" class="logo">
- 
+     
     <h1>Saucy</h1>
- 
+     
     <h2>North America's first high-protein sauce!</h2>
- 
+     
     <p>Imagine the taste of nonna's tomato basil sauce, packing the nutrition of a protein shake.</p>
- 
+
+    <!-- Live Ticker -->
+     
+    <section id="ticker">
+       
+      <h2>
+        <span id="signup-count">
+          <span class="counter-digit">0</span>
+          <span class="counter-digit">0</span>
+          <span class="counter-digit">0</span>
+          <span class="counter-digit">0</span>
+        </span>
+        signed up!
+      </h2>
+       
+    </section>
+     
   </header>
- 
+   
   <!-- Signup Form -->
- 
+   
   <section id="signup-form">
- 
+     
     <h2>Join Saucy's Waitlist</h2>
- 
+     
     <form id="waitlist-form" action="https://script.google.com/macros/s/AKfycbzZIlqBB7svYvPYchds9bWMpjuJSNn5wp2Bj703eUXdzSlqM4jtf2FBsUEkN0_rskHl/exec" method="POST">
- 
+       
       <!-- First Name Input -->
- 
+       
       <label for="firstname">First Name:</label>
- 
+       
       <input type="text" id="name" name="firstname" placeholder="Enter your first name" required>
- 
+       
       <!-- First Name Input -->
- 
+       
       <label for="lastname">Last Name:</label>
- 
+       
       <input type="text" id="name" name="lastname" placeholder="Enter your last name" required>
- 
+       
       <!-- Email Input -->
- 
+       
       <label for="email">Your Email:</label>
- 
+       
       <input type="email" id="email" name="email" placeholder="Enter your email" required>
- 
+       
       <!-- Survey Questions -->
- 
+       
       <label for="price">How much do you currently pay for a jar of pasta sauce?</label>
- 
+       
       <select id="price" name="price" required>
- 
+         
         <option value="" disabled selected>Select which best applies</option>
- 
+         
         <option value="less-than-5">$5 or less</option>
- 
+         
         <option value="5-10">$5–$10</option>
- 
+         
         <option value="10-15">$10-$15</option>
- 
+         
       </select>
- 
+       
       <label for="frequency">How often do you buy a jar of pasta sauce?</label>
- 
+       
       <select id="frequency" name="frequency" required>
- 
+         
         <option value="" disabled selected>Select which best applies</option>
- 
+         
         <option value="monthly">Once a Month</option>
- 
+         
         <option value="bimonthly">Twice a Month</option>
- 
+         
         <option value="occasionally">Occasionally</option>
- 
+         
       </select>
- 
+       
       <label for="marketing">How did you hear of Saucy?</label>
- 
+       
       <select id="marketing" name="marketing" required>
- 
+         
         <option value="" disabled selected>Select which best applies</option>
- 
+         
         <option value="instagram">From Instagram</option>
- 
+         
         <option value="tiktok">From Tiktok</option>
- 
+         
         <option value="founders">From the Founders</option>
- 
+         
         <option value="qr">From a QR code in the wild</option>
- 
+         
         <option value="gym">At the Gym</option>
- 
+         
       </select>
- 
+       
       <!-- Submit Button -->
- 
+       
       <button type="submit">Preorder Saucy</button>
- 
+       
     </form>
- 
+     
   </section>
- 
-  <!-- Live Ticker -->
- 
-  <section id="ticker">
- 
-    <h2>
-      <span id="signup-count">
-        <span class="counter-digit">0</span>
-        <span class="counter-digit">0</span>
-        <span class="counter-digit">0</span>
-      </span>
-      signed up!
-    </h2>
- 
-  </section>
- 
+   
   <!-- Footer -->
- 
   <footer>
- 
-    <h3>© 2024 Saucy Protein. All rights reserved.</h3>
- 
+    <div class="footer-social">
+      <a href="https://www.tiktok.com/@saucyprotein" target="_blank" aria-label="TikTok">
+        <img src="ttlogo.png" alt="TikTok Logo" class="social-logo" />
+      </a>
+      <a href="https://www.instagram.com/saucyprotein" target="_blank" aria-label="Instagram">
+        <img src="iglogo.png" alt="Instagram Logo" class="social-logo" />
+      </a>
+    </div>
+    <p>© 2024 Saucy. All Rights Reserved.</p>
   </footer>
- 
+   
   <script src="script.js"></script>
- 
+   
 </body>
  
+
 </html>
