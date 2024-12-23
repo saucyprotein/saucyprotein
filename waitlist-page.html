@@ -83,22 +83,6 @@
     <p>© 2024 Saucy. All Rights Reserved.</p>
   </footer>
 
-  <!-- Google Script for Form Submission -->
-  <script>
-    function submitForm(event) {
-      event.preventDefault(); // Prevent form from refreshing the page
-
-      // Get form data
-      const email = document.getElementById('email').value;
-      const marketing = document.getElementById('marketing').value;
-
-      // Call Google Apps Script function to handle form submission
-      google.script.run.withSuccessHandler(function(response) {
-        alert('Thank you for joining the waitlist!');
-      }).submitWaitlistForm(email, marketing);
-    }
-  </script>
-
 </body>
 
 </html>
