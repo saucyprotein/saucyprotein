@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saucy Waitlist Form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://apis.google.com/js/platform.js"></script>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header style="background-color: #9c2e2f; color: white; padding: 30px 0;">
+    <div style="display: flex; align-items: center; justify-content: flex-start; margin-left: 30px;">
+      <img src="saucylogo.jpg" alt="Saucy Logo" style="height: 50px;">
+      <h1 style="font-size: 2.5rem; margin-left: 10px; font-weight: bold;">Saucy</h1>
+    </div>
+  </header>
+
+  <!-- User Intake Form Section -->
+  <section id="waitlist-form" style="text-align: center; margin-top: 40px;">
+    <h2 style="font-size: 2rem; margin-bottom: 20px;">Join the Waitlist</h2>
+    
+    <!-- Form to submit email and how they heard about Saucy -->
+    <form id="waitlist-form" onsubmit="submitForm(event)">
+      <!-- Email Address -->
+      <label for="email" style="font-size: 1.2rem;">Email Address:</label><br>
+      <input type="email" id="email" name="email" required placeholder="Enter your email" style="padding: 10px; width: 300px; margin-bottom: 20px; border-radius: 4px; border: 1px solid #ccc;"><br>
+
+      <!-- How did you hear about Saucy? -->
+      <label for="source" style="font-size: 1.2rem;">How did you hear about Saucy?</label><br>
+      <select id="source" name="source" required style="padding: 10px; width: 300px; margin-bottom: 20px; border-radius: 4px; border: 1px solid #ccc;">
+        <option value="social_media">Social Media</option>
+        <option value="word_of_mouth">Word of Mouth</option>
+        <option value="ad">Advertisement</option>
+        <option value="other">Other</option>
+      </select><br>
+
+      <button type="submit" style="padding: 15px 30px; background-color: #9c2e2f; color: white; font-size: 1.2rem; border: none; cursor: pointer; border-radius: 5px;">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer style="background-color: #9c2e2f; color: white; padding: 20px 0; text-align: center; margin-top: 40px;">
+    <h3>Follow Saucy's Journey</h3>
+    <div class="footer-social" style="display: flex; justify-content: center; gap: 15px; margin-bottom: 10px;">
+      <a href="https://www.tiktok.com/@saucyprotein" target="_blank" aria-label="TikTok">
+        <img src="ttlogo.png" alt="TikTok Logo" class="social-logo" style="width: 40px; height: 40px;" />
+      </a>
+      <a href="https://www.instagram.com/saucyprotein" target="_blank" aria-label="Instagram">
+        <img src="iglogo.png" alt="Instagram Logo" class="social-logo" style="width: 40px; height: 40px;" />
+      </a>
+    </div>
+    <p>© 2024 Saucy. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Google Script for Form Submission -->
+  <script>
+    function submitForm(event) {
+      event.preventDefault(); // Prevent form from refreshing the page
+
+      // Get form data
+      const email = document.getElementById('email').value;
+      const source = document.getElementById('source').value;
+
+      // Call Google Apps Script function to handle form submission
+      google.script.run.withSuccessHandler(function(response) {
+        alert('Thank you for joining the waitlist!');
+      }).submitWaitlistForm(email, source);
+    }
+  </script>
+
+</body>
+
+</html>
