@@ -9,6 +9,12 @@ body {
   overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
+/* Hyperlink Styling */
+a {
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Inherits the color from the parent, so it won't be blue */
+}
+  
 /* Header Styling */
 header {
   background-color: #9c2e2f; /* Saucy logo red */
