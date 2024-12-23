@@ -72,11 +72,16 @@ form button {
 }
 
 form button {
+  padding: 15px 30px;
   background-color: #9c2e2f;
   color: white;
-  border: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
+  max-width: 400px; /* Or max-width: 400px for fixed size */
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 form button:hover {
