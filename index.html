@@ -1,39 +1,34 @@
 <!DOCTYPE html>
- 
 <html lang="en">
- 
 
 <head>
-   
   <meta charset="UTF-8">
-   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
   <title>Saucy Waitlist</title>
-   
   <link rel="stylesheet" href="style.css">
-   
 </head>
- 
 
 <body>
-   
   <!-- Header Section -->
-   
-  <header>
-     
-    <img src="saucylogo.jpg" alt="Saucy Protein Sauce Logo" class="logo">
-     
-    <h1>Saucy</h1>
-     
-    <h2>North America's first high-protein sauce!</h2>
-     
-    <p>Imagine the taste of nonna's tomato basil sauce, packing the nutrition of a protein shake.</p>
+  <header style="background-color: #9c2e2f; color: white; padding: 30px 0;">
+    <div style="display: flex; align-items: center; justify-content: flex-start; margin-left: 30px;">
+      <!-- Logo Image -->
+      <img src="saucylogo.jpg" alt="Saucy Logo" style="height: 50px;">
+      
+      <!-- Logo Text (Saucy) -->
+      <h1 style="font-size: 2.5rem; margin-left: 10px; font-weight: bold;">Saucy</h1>
+    </div>
+    
+    <!-- Tagline -->
+    <h2 style="text-align: center; margin-top: 10px; line-height: 1.4;">
+      <span>The <u>flavor</u></span><br>
+      <span>of Nonna's tomato basil sauce</span><br>
+      <span>packing the <u>nutrition</u></span><br>
+      <span>of a protein shake!</span>
+    </h2>
 
-    <!-- Live Ticker -->
-     
-    <section id="ticker">
-       
+    <!-- Counter Section -->
+    <section id="ticker" style="text-align: center; margin-top: 20px;">
       <h2>
         <span id="signup-count">
           <span class="counter-digit">0</span>
@@ -43,109 +38,34 @@
         </span>
         signed up!
       </h2>
-       
     </section>
-     
   </header>
-   
-  <!-- Signup Form -->
-   
-  <section id="signup-form">
-     
-    <h2>Join Saucy's Waitlist</h2>
-     
-    <form id="waitlist-form" action="https://script.google.com/macros/s/AKfycbzZIlqBB7svYvPYchds9bWMpjuJSNn5wp2Bj703eUXdzSlqM4jtf2FBsUEkN0_rskHl/exec" method="POST">
-       
-      <!-- First Name Input -->
-       
-      <label for="firstname">First Name:</label>
-       
-      <input type="text" id="name" name="firstname" placeholder="Enter your first name" required>
-       
-      <!-- First Name Input -->
-       
-      <label for="lastname">Last Name:</label>
-       
-      <input type="text" id="name" name="lastname" placeholder="Enter your last name" required>
-       
-      <!-- Email Input -->
-       
-      <label for="email">Your Email:</label>
-       
-      <input type="email" id="email" name="email" placeholder="Enter your email" required>
-       
-      <!-- Survey Questions -->
-       
-      <label for="price">How much do you currently pay for a jar of pasta sauce?</label>
-       
-      <select id="price" name="price" required>
-         
-        <option value="" disabled selected>Select which best applies</option>
-         
-        <option value="10-15">$10-$15</option>
-        
-        <option value="5-10">$5–$10</option>
-         
-        <option value="less-than-5">$5 or less</option>
-         
-      </select>
-       
-      <label for="frequency">How often do you buy a jar of pasta sauce?</label>
-       
-      <select id="frequency" name="frequency" required>
-         
-        <option value="" disabled selected>Select which best applies</option>
-         
-        <option value="bimonthly">Twice a Month</option>
-         
-        <option value="monthly">Once a Month</option>
-         
-        <option value="occasionally">Occasionally</option>
-         
-      </select>
-       
-      <label for="marketing">How did you hear of Saucy?</label>
-       
-      <select id="marketing" name="marketing" required>
-         
-        <option value="" disabled selected>Select which best applies</option>
-         
-        <option value="instagram">From Instagram</option>
-         
-        <option value="tiktok">From Tiktok</option>
-         
-        <option value="founders">From the Founders</option>
-         
-        <option value="qr">From a QR code in the wild</option>
-         
-        <option value="gym">At the Gym</option>
-         
-      </select>
-       
-      <!-- Submit Button -->
-       
-      <button type="submit">Preorder Saucy</button>
-       
-    </form>
-     
+
+  <!-- Video Section -->
+  <section id="video-container" style="text-align: center; margin-top: 30px;">
+    <iframe id="saucy-video" width="560" height="315" src="https://www.youtube.com/embed/U5naJmtJxi4?autoplay=1&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   </section>
-   
+
+  <!-- Join Waitlist Button -->
+  <section id="join-waitlist" style="text-align: center; margin-top: 30px;">
+    <button onclick="window.location.href='waitlist-page.html'" style="padding: 15px 30px; background-color: #9c2e2f; color: white; font-size: 1.2rem; border: none; cursor: pointer; border-radius: 5px;">Join Waitlist</button>
+  </section>
+
   <!-- Footer -->
-  <footer>
-    <div class="footer-social">
+  <footer style="background-color: #9c2e2f; color: white; padding: 20px 0; text-align: center; margin-top: 40px;">
+    <h3>Follow Saucy's Journey</h3>
+    <div class="footer-social" style="display: flex; justify-content: center; gap: 15px; margin-bottom: 10px;">
       <a href="https://www.tiktok.com/@saucyprotein" target="_blank" aria-label="TikTok">
-        <img src="ttlogo.png" alt="TikTok Logo" class="social-logo" />
+        <img src="ttlogo.png" alt="TikTok Logo" class="social-logo" style="width: 40px; height: 40px;" />
       </a>
       <a href="https://www.instagram.com/saucyprotein" target="_blank" aria-label="Instagram">
-        <img src="iglogo.png" alt="Instagram Logo" class="social-logo" />
+        <img src="iglogo.png" alt="Instagram Logo" class="social-logo" style="width: 40px; height: 40px;" />
       </a>
     </div>
     <p>© 2024 Saucy. All Rights Reserved.</p>
   </footer>
-   
+
   <script src="script.js"></script>
-   
 </body>
- 
 
 </html>
