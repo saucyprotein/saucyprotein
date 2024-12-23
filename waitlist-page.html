@@ -19,31 +19,59 @@
   </header>
 
   <!-- User Intake Form Section -->
-  <section id="waitlist-form" style="text-align: center; margin-top: 40px;">
-    <h2 style="font-size: 2rem; margin-bottom: 20px;">Join the Waitlist</h2>
+  <section>
+    <h2 style="font-size: 2rem; margin-top: 20px; margin-bottom: 20px;"> Join Saucy's Waitlist</h2>
     
     <!-- Form to submit email and how they heard about Saucy -->
-    <form id="waitlist-form" onsubmit="submitForm(event)">
+    <form id="waitlist-form" 
+          action="https://script.google.com/macros/s/AKfycbzZIlqBB7svYvPYchds9bWMpjuJSNn5wp2Bj703eUXdzSlqM4jtf2FBsUEkN0_rskHl/exec" 
+          method="POST"
+          style="text-align: center; 
+                  margin-top: 40px;">
+      
+    
       <!-- Email Address -->
       <label for="email" style="font-size: 1.2rem;">Email Address:</label><br>
       <input type="email" id="email" name="email" required placeholder="Enter your email" style="padding: 10px; width: 300px; margin-bottom: 20px; border-radius: 4px; border: 1px solid #ccc;"><br>
 
       <!-- How did you hear about Saucy? -->
-      <label for="source" style="font-size: 1.2rem;">How did you hear about Saucy?</label><br>
-      <select id="source" name="source" required style="padding: 10px; width: 300px; margin-bottom: 20px; border-radius: 4px; border: 1px solid #ccc;">
-        <option value="social_media">Social Media</option>
-        <option value="word_of_mouth">Word of Mouth</option>
-        <option value="ad">Advertisement</option>
-        <option value="other">Other</option>
+      <label for="marketing" 
+             style="font-size: 1.2rem;">How did you hear about Saucy?
+      </label>
+      <br>
+      <select id="marketing" 
+              name="marketing" 
+              required 
+              style="padding: 10px; width: 300px; 
+                     margin-bottom: 20px; border-radius: 4px; 
+                     border: 1px solid #ccc;">
+        <option value="" disabled selected>Select which best applies</option>
+         <option value="instagram">From Instagram</option>
+        
+        <option value="tiktok">From Tiktok</option>
+        
+        <option value="founders">From the Founders</option>
+        
+        <option value="qr">From a QR code in the wild</option>
+        
+        <option value="gym">At the Gym</option>
       </select><br>
 
-      <button type="submit" style="padding: 15px 30px; background-color: #9c2e2f; color: white; font-size: 1.2rem; border: none; cursor: pointer; border-radius: 5px;">Submit</button>
+      <button type="submit" 
+              style="padding: 15px 30px; 
+                     background-color: #9c2e2f; 
+                     color: white; 
+                     font-size: 1.2rem; 
+                     border: none; 
+                     cursor: pointer; 
+                     border-radius: 5px;">Submit
+      </button>
     </form>
   </section>
 
   <!-- Footer Section -->
   <footer style="background-color: #9c2e2f; color: white; padding: 20px 0; text-align: center; margin-top: 40px;">
-    <h3>Follow Saucy's Journey</h3>
+    <p>Follow Saucy's Journey</p>
     <div class="footer-social" style="display: flex; justify-content: center; gap: 15px; margin-bottom: 10px;">
       <a href="https://www.tiktok.com/@saucyprotein" target="_blank" aria-label="TikTok">
         <img src="ttlogo.png" alt="TikTok Logo" class="social-logo" style="width: 40px; height: 40px;" />
