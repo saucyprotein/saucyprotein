@@ -90,12 +90,12 @@
 
       // Get form data
       const email = document.getElementById('email').value;
-      const source = document.getElementById('source').value;
+      const marketing = document.getElementById('marketing').value;
 
       // Call Google Apps Script function to handle form submission
       google.script.run.withSuccessHandler(function(response) {
         alert('Thank you for joining the waitlist!');
-      }).submitWaitlistForm(email, source);
+      }).submitWaitlistForm(email, marketing);
     }
   </script>
 
