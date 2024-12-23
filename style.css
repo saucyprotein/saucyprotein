@@ -121,14 +121,22 @@ form button:hover {
   transform: rotateX(180deg);
 }
 
-/* Footer */
-footer {
+/* Video Section */
+#video-container {
   margin-top: 20px;
-  padding: 10px;
-  font-size: 0.9rem;
-  background-color: #333;
-  color: white;
+  max-width: 80%;
+  margin: 0 auto;
+  position: relative;
 }
+
+/* Footer Styling */
+footer h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #9c2e2f;
+  margin-bottom: 10px;
+}
+
 .footer-social {
   display: flex;
   justify-content: center;
