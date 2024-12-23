@@ -2,6 +2,8 @@
 html, body {
   height: 100%; /* Ensures body takes up full height of the viewport */
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -10,12 +12,10 @@ body {
   text-align: center;
   line-height: 0.75;
   overflow-x: hidden; /* Prevent horizontal scroll */
-  display: flex;
-  flex-direction: column;
 }
 
 main {
-  flex-grow: 1;
+  flex-grow: 1; /* Allow main content to take up available space */
 }
 
 /* Hyperlink Styling */
@@ -163,6 +163,13 @@ iframe {
 }
 
 /* Footer Styling */
+footer {
+  padding: 20px 0;
+  background-color: #f5f5f5; /* Light background for footer */
+  text-align: center;
+  margin-top: auto; /* Push footer to bottom */
+}
+
 footer h3 {
   font-size: 1.5rem;
   font-weight: bold;
