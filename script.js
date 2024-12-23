@@ -33,7 +33,7 @@ function updateTicker() {
   // Store current count after animation completes to avoid mid-animation updates
   setTimeout(() => {
     previousCount = count;
-  }, 500); // Ensure it's updated after the flip
+  }, 200); // Ensure it's updated after the flip
 }
 
 // Fetch current counter value from the Google Apps Script Web App
