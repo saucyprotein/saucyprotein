@@ -7,6 +7,8 @@ body {
   text-align: center;
   line-height: 0.75;
   overflow-x: hidden; /* Prevent horizontal scroll */
+  display: flex;
+  flex-direction: column;
 }
 
 /* Hyperlink Styling */
@@ -127,6 +129,10 @@ form button:hover {
   font-size: 1.2rem;
 }
 
+main {
+  flex-grow: 1;
+}
+
 /* Video Section */
 #video-container {
   margin: 20px auto;
@@ -202,6 +208,7 @@ footer h3 {
   }
 
   footer {
+    margin-top: auto; /* Ensures footer is pushed to the bottom */
     padding: 10px 0;
   }
 
