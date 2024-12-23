@@ -111,17 +111,17 @@ form button:hover {
   transform-origin: top;
 }
 
-/* Flipping Animation */
-.flip {
-  transform: rotateX(180deg);
+#signup-message {
+  margin: 10px 0; /* Minimal padding above and below */
+  font-size: 1.2rem;
 }
 
 /* Video Section */
 #video-container {
   margin: 20px auto;
   width: 100%;
-  max-width: 80%;
-  position: relative;
+  max-width: 800px;
+  aspect-ratio: 16 / 9; /* Maintain proper aspect ratio */
   display: flex;
   justify-content: center;
 }
@@ -130,8 +130,16 @@ iframe {
   width: 100%;
   height: auto;
   max-width: 800px;
-  max-height: 450px;
+  aspect-ratio: 16 / 9; /* Ensure correct height */
   border: none;
+}
+
+/* Follow Saucy's Journey */
+#follow-saucy {
+  margin: 20px auto;
+  font-size: 1.5rem;
+  color: #9c2e2f; /* Ensure color is distinct */
+  font-weight: bold;
 }
 
 /* Footer Styling */
@@ -179,12 +187,16 @@ footer h3 {
   }
 
   iframe {
-    max-width: 100%;
-    max-height: 60vw; /* Maintain aspect ratio on mobile */
+    aspect-ratio: 16 / 9; /* Maintain proper aspect ratio on mobile */
   }
 
   footer {
     padding: 10px 0;
+  }
+
+  #follow-saucy {
+    font-size: 1.3rem;
+    margin-top: 15px;
   }
 }
 
@@ -203,5 +215,9 @@ footer h3 {
 
   #signup-count {
     font-size: 2rem;
+  }
+
+  #follow-saucy {
+    font-size: 1.2rem;
   }
 }
